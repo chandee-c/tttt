@@ -1,0 +1,137 @@
+body{
+    font-family: "Tohoma", sans-serif;
+    background-color: #fef9c3;
+    display: block;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.content-me{
+    background: #e1f8e1;
+    border: 2px solid #4fd37d;
+    border-radius: 12px;
+    padding: 2rem 3rem;
+    margin-top: auto;
+    width: 90%;
+}
+.sidebar{
+    background: #e1f8e1;
+    border: 2px solid #4fd37d;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin: auto;
+    width: 90%;
+
+}
+.sidebar:hover{
+    background-color: #7ed39c;
+    border-color: rgb(59, 110, 49);
+    transition: background-color 0.3s;
+}
+.card {
+    background: #e1f8e1;
+    border: 2px solid #4fd37d;
+    border-radius: 12px;
+    padding: 1.5rem;
+
+    
+}
+.card:hover{
+    background-color: #7ed39c;
+    border-color: rgb(59, 110, 49);
+    transition: background-color 0.3s;
+}
+
+/* .card.featured — เฉพาะการ์ด Matcha ที่มี 2 class */
+.card.featured {
+    border: 2px solid #22c55e;
+}
+
+/* .price — ราคา ฿55, ฿75, ฿65 */
+.price {
+    color: #16a34a;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+/* .badge — ป้าย BEST SELLER, NEW */
+.badge {
+    font-size: 0.7rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 20px;
+    font-weight: 600;
+}
+.bestseller { background: #fef9c3; color: #854d0e; }
+.new { background: #dcfce7; color: #166534; }
+
+/* #menu — เฉพาะ section เมนูแนะนำ */
+#menu {
+    padding: 3rem 2rem;
+    background: #f0fdf4;
+}
+
+/* #about — เฉพาะ article เรื่องราวของเรา */
+#about {
+    padding: 2rem;
+}
+
+/* Descendant selector: เฉพาะ a ที่อยู่ภายใน .main-nav */
+.main-nav a {
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+}
+/* พื้นหลังทั้งหน้า — เขียวอ่อนมาก */
+body {
+    background-color: #f0fdf4;
+}
+
+/* Hero Section — ไล่สีเขียว (gradient) */
+.hero-section {
+    background: linear-gradient(
+        135deg,
+        #15803d,         /* เขียวเข้ม */
+        #22c55e          /* เขียวสด */
+    );
+    color: white;
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.M{
+    border: 2px solid black;
+    color: aliceblue;
+    text-decoration: none;
+    margin-right: 25px;
+}
+.C{
+    border: 2px solid black;
+    color: aliceblue;
+    text-decoration: none;
+    margin: 25px;
+}
+.A{
+    border: 2px solid black;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+/* Header — เขียวเข้มทึบ */
+.site-header {
+    background-color: #166534;
+    color: white;
+    padding: 1rem 2rem;
+}
+/* ส่วนเมนู — เขียวอ่อน */
+#menu {
+    background-color: #f0fdf4;
+    padding: 3rem 2rem;
+}
+
+/* Footer — เขียวเข้ม เหมือน Header */
+.site-footer {
+    background-color: #14532d;
+    color: rgba(255, 255, 255, 0.8);   /* ขาว 80% */
+    text-align: center;
+    padding: 2rem;
+    margin-top: 50px
+}
