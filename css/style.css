@@ -11,10 +11,7 @@ body{
     border: 2px solid #4fd37d;
     border-radius: 12px;
     padding: 1.5rem;
-    margin: auto;
-    width: 90%;
-    cursor: pointer;
-    
+    margin-bottom: 10px;
 }
 .content-me:hover{
     background-color: #7ed39c;
@@ -26,8 +23,6 @@ body{
     border: 2px solid #4fd37d;
     border-radius: 12px;
     padding: 1.5rem;
-    margin: auto;
-    width: 90%;
 }
 .sidebar:hover{
     background-color: #7ed39c;
@@ -39,8 +34,7 @@ body{
     border: 2px solid #4fd37d;
     border-radius: 12px;
     padding: 1.5rem;
-
-    
+    margin-bottom: 10px;
 }
 .card:hover{
     background-color: #7ed39c;
@@ -80,12 +74,6 @@ body{
 #about {
     padding: 2rem;
 }
-
-/* Descendant selector: เฉพาะ a ที่อยู่ภายใน .main-nav */
-.main-nav a {
-    padding: 0.5rem 1rem;
-    border-radius: 8px;
-}
 /* พื้นหลังทั้งหน้า — เขียวอ่อนมาก */
 body {
     background-color: #f0fdf4;
@@ -103,24 +91,35 @@ body {
     padding: 4rem 2rem;
 }
 
-.M{
-    border: 2px solid black;
-    color: aliceblue;
-    text-decoration: none;
-    margin-right: 25px;
-}
-.C{
-    border: 2px solid black;
-    color: aliceblue;
-    text-decoration: none;
-    margin: 25px;
-}
-.A{
-    border: 2px solid black;
-    color: aliceblue;
-    text-decoration: none;
+.logo{
+    font-size: 50px;
 }
 
+.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 20px;
+    color: #183b26;
+
+    
+}
+
+.nav-link {
+    border: 2px solid black;
+    color: aliceblue;
+    text-decoration: none;
+    padding: 8px 16px;      /* เพิ่มพื้นที่ในปุ่มให้ดูสวยขึ้น */
+    border-radius: 8px;     /* ทำให้ขอบมนเหมือนในรูปของคุณ */
+    transition: 0.3s;       /* เวลาเอาเมาส์วางจะดูสมูทขึ้น */
+}
+.login-btn {
+    margin-left: auto;      /* ดันตัวเองและปุ่มข้างหลังไปชิดขวา */
+}
+.nav-link:hover {
+    background-color: black;
+    color: white;
+}
 /* Header — เขียวเข้มทึบ */
 .site-header {
     background-color: #166534;
