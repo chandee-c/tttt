@@ -1,0 +1,34 @@
+/* เปลี่ยนสีปุ่ม Primary */
+.btn-primary {
+    background-color: #16a34a;
+    border-color: #16a34a;
+}
+.btn-primary:hover {
+    background-color: #15803d;
+    border-color: #15803d;
+}
+
+/* เพิ่ม Shadow ให้ Card */
+.card {
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    border: none;
+    border-radius: 12px;
+}
+
+/* Customize Navbar */
+.navbar-custom {
+    background: linear-gradient(135deg, #16a34a, #0ea5e9) !important;
+}
+
+/* Custom Badge Style */
+.badge-custom {
+    background: linear-gradient(90deg, #16a34a, #0ea5e9);
+    border-radius: 20px;
+    padding: 5px 14px;
+}
+
+/* Responsive Typography */
+@media (max-width: 768px) {
+    h1 { font-size: 1.8rem; }
+    h2 { font-size: 1.4rem; }
+}
