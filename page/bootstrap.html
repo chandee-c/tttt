@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ตัวอย่าง Bootstrap Components</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+</head>
+<body class="bg-light">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-4">
+        <div class="container">
+            <a class="navbar-brand" href="#"><i class="bi bi-rocket-takeoff"></i> MyWeb</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">หน้าแรก</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">บทเรียน <span class="badge text-bg-danger">Hot</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                
+                <div class="alert alert-info alert-dismissible fade show" role="alert">
+                    <strong>ยินดีต้อนรับ!</strong> กรุณากรอกข้อมูลเพื่อสมัครสมาชิก
+                    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                </div>
+
+                <div class="card shadow-sm">
+                    <div class="card-header bg-primary text-white">
+                        <h5 class="mb-0">แบบฟอร์มลงทะเบียน</h5>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="mb-3">
+                                <label class="form-label">ชื่อผู้ใช้</label>
+                                <div class="input-group">
+                                    <span class="input-group-text">@</span>
+                                    <input type="text" class="form-control" placeholder="username">
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">อีเมล</label>
+                                <input type="email" class="form-control is-valid" value="test@silpakorn.edu">
+                                <div class="valid-feedback">อีเมลนี้ใช้งานได้!</div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label">รหัสผ่าน</label>
+                                <input type="password" class="form-control" placeholder="รหัสผ่านอย่างน้อย 8 ตัว">
+                            </div>
+
+                            <div class="d-grid gap-2">
+                                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#confirmModal">
+                                    บันทึกข้อมูล
+                                </button>
+                                <button type="reset" class="btn btn-outline-secondary btn-sm">ล้างค่า</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="confirmModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">ยืนยันการสมัคร</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    คุณแน่ใจใช่ไหมว่าข้อมูลถูกต้องครบถ้วนแล้ว?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ปิด</button>
+                    <button type="button" class="btn btn-primary">ตกลง, สมัครสมาชิก</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
